@@ -216,7 +216,38 @@ tag to tell browsers to render the gaps.
                 <input type="checkbox" name="check-genre" id="wd-chkbox-fantasy"/>
                 <label htmlFor="wd-chkbox-fantasy">Fantasy</label>
             </div>
-            
+            <div id="wd-dropdowns">
+            <h4 id="wd-dropdowns">Dropdowns</h4>
+                <h5>Select one</h5>
+                <label htmlFor="wd-select-one-genre"> Favorite movie genre: </label><br/>
+                <select id="wd-select-one-genre">
+                <option value="COMEDY">Comedy</option>
+                <option value="DRAMA">Drama</option>
+                <option selected value="SCIFI">
+                    Science Fiction</option>
+                <option value="FANTASY">Fantasy</option>
+                </select>
+
+                <h5>Select many</h5>
+                <label htmlFor="wd-select-many-genre"> Favorite movie genres: </label><br/>
+                <select id="wd-select-many-genre" multiple>
+                <option selected value="COMEDY">Comedy</option>
+                <option value="DRAMA">Drama</option>
+                <option selected value="SCIFI">
+                    Science Fiction</option>
+                <option value="FANTASY">Fantasy</option>
+                </select>
+            </div>
+            <div id="wd-anchor-tag">
+                <h4>Anchor tag</h4>
+                Please&nbsp;
+                <a id="wd-lipsum" href="https://www.lipsum.com">click here</a>&nbsp;    
+                to get dummy text<br/>
+                <h4>Github</h4>
+                Please&nbsp;     
+                <a id="wd-github" href="https://github.com/ChenzuoL/kanbas-react-web-app-2024-su2">click here</a>&nbsp;
+                to direct to github repository<br/>
+            </div>
         </div>
     );
 }

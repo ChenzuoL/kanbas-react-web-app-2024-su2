@@ -169,10 +169,54 @@ tag to tell browsers to render the gaps.
             </form>
             </div>
             <div id="wd-textareas">
-            <h5>Text boxes</h5>
-            <label>Biography:</label><br/>
-            <textarea id="wd-textarea" cols={30} rows={10}>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</textarea>
+                <h5>Text boxes</h5>
+                <label>Biography:</label><br/>
+                <textarea id="wd-textarea" cols={30} rows={10}>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</textarea>
             </div>
+            <div id="wd-buttons">
+                <h5 id="wd-buttons">Buttons</h5>
+                <button id="wd-all-good" onClick={() => alert("Life is Good!")} type="button">
+                Hello World!
+                </button>
+            </div>
+            <div id="wd-upload-file">
+                <h5>File upload</h5>
+                <input id="wd-upload" type="file"/>
+            </div>
+            <div id="wc-radio-buttons">
+                <h5 id="wd-radio-buttons">Radio buttons</h5>
+
+                <label>Favorite movie genre:</label><br />
+
+                <input type="radio" name="radio-genre" id="wd-radio-comedy"/>
+                <label htmlFor="wd-radio-comedy">Comedy</label><br />
+
+                <input type="radio" name="radio-genre" id="wd-radio-drama"/>
+                <label htmlFor="wd-radio-drama">Drama</label><br />
+
+                <input type="radio" name="radio-genre" id="wd-radio-scifi"/>
+                <label htmlFor="wd-radio-scifi">Science Fiction</label><br />
+
+                <input type="radio" name="radio-genre" id="wd-radio-fantasy"/>
+                <label htmlFor="wd-radio-fantasy">Fantasy</label>
+            </div>
+            <div id="wd-checkboxs">
+                <h5 id="wd-checkboxes">Checkboxes</h5>
+                <label>Favorite movie genre:</label><br/>
+
+                <input type="checkbox" name="check-genre" id="wd-chkbox-comedy"/>
+                <label htmlFor="wd-chkbox-comedy">Comedy</label><br/>
+
+                <input type="checkbox" name="check-genre" id="wd-chkbox-drama"/>
+                <label htmlFor="wd-chkbox-drama">Drama</label><br/>
+
+                <input type="checkbox" name="check-genre" id="wd-chkbox-scifi"/>
+                <label htmlFor="wd-chkbox-scifi">Science Fiction</label><br/>
+
+                <input type="checkbox" name="check-genre" id="wd-chkbox-fantasy"/>
+                <label htmlFor="wd-chkbox-fantasy">Fantasy</label>
+            </div>
+            
         </div>
     );
 }
